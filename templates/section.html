@@ -1,0 +1,17 @@
+<!doctype html> 
+<head> 
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='section.css')}}">
+</head>
+
+<title> TA Dashboard </title> 
+<body>
+    <div class="header-section">
+        {% if section %}
+            <h1> Information for Section {{section}} </h1> 
+        {% else %} 
+            <h1> Generic Dashboard </h1> 
+        {% endif %}
+    </div>
+</body> 
+
+</html> 
